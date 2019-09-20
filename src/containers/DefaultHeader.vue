@@ -14,7 +14,6 @@ import { Header as AppHeader, SidebarToggler, AsideToggler } from '@coreui/vue'
 import LogoNavBarItem from '../components/LogoNavBarItem'
 import LeftNavBarItem from '../components/LeftNavBarItem'
 import RightNavBarItem from '../components/RightNavBarItem'
-
 export default {
   name: 'DefaultHeader',
   components: {
