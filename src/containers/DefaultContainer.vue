@@ -23,7 +23,6 @@
     />
   </div>
 </template>
-
 <script>
 import { Aside as AppAside, Breadcrumb } from '@coreui/vue'
 import DefaultAside from './DefaultAside'
@@ -35,13 +34,24 @@ import DefaultLeftSidebar from './DefaultLeftSidebar'
 export default {
   name: 'DefaultContainer',
   components: {
+    AppSidebar,
     AppAside,
     Breadcrumb,
     DefaultAside,
     DefaultHeaderDropdownAccnt,
     DefaultFooter,
     DefaultHeader,
-    DefaultLeftSidebar
+    DefaultLeftSidebar,
+    SidebarForm,
+    SidebarFooter,
+    SidebarHeader,
+    SidebarNav,
+    SidebarMinimizer
+  },
+  data () {
+    return {
+      nav: nav.items
+    }
   },
   computed: {
     name () {
