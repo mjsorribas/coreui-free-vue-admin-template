@@ -1,0 +1,14 @@
+{
+  "posts": [
+    { "id": 1,"userId": 2, "title": "json-server", "author": "max" }
+  ],
+  "comments": [
+    { "id": 1, "userId":1,"body": "some comment", "postId": 1 }
+  ],
+  "users": [
+	{"id":1,"username":"john","password":"secret"},
+        {"id":2,"username":"max","password":"demo"}
+  ]	
+}
+
+
