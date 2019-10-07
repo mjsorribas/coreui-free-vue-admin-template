@@ -2,119 +2,176 @@
   <div class="animated fadeIn">
     <b-row>
       <b-col sm="6" md="4">
-        <b-card header="Card title">
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-        </b-card>
+        <Card
+          v-bind:title="'Title Card'"
+          v-bind:content="'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.'"
+          v-bind:titleInFooter=false
+        />
       </b-col>
       <b-col sm="6" md="4">
-        <b-card show-footer>
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-          <div slot="footer">Card footer</div>
-        </b-card>
+        <Card
+          v-bind:title="'Card footer'"
+          v-bind:content="'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.'"
+          v-bind:titleInFooter=true
+        />
       </b-col>
       <b-col sm="6" md="4">
-        <b-card>
-          <div slot="header"><i class='fa fa-check'></i> Card with icon</div>
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-        </b-card>
+        <Card
+          v-bind:title="'Card with icon'"
+          v-bind:content="'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.'"
+          v-bind:titleInFooter=false
+          v-bind:withIcon=true
+          v-bind:icon="'fa fa-check'"
+        />
       </b-col>
       <b-col sm="6" md="4">
-        <b-card>
-          <div slot="header">
-            Card with switch
-            <div class="card-header-actions" style="height: 21px;">
-              <c-switch size="sm" color="info" checked label />
-            </div>
-          </div>
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-        </b-card>
+        <Card
+          v-bind:title="'Card with switch'"
+          v-bind:content="'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.'"
+          v-bind:titleInFooter=false
+          v-bind:withActions=true
+          v-bind:withSwitch=true
+          v-bind:switchSize="'sm'"
+          v-bind:switchColor="'info'"
+          v-bind:switchState=false
+        />
       </b-col>
       <b-col sm="6" md="4">
-        <b-card>
-          <div slot="header">
-            Card with label
-            <div class="card-header-actions">
-              <b-badge variant="success">Success</b-badge>
-            </div>
-          </div>
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-        </b-card>
+        <Card
+          v-bind:title="'Card with label'"
+          v-bind:content="'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.'"
+          v-bind:titleInFooter=false
+          v-bind:withActions=true
+          v-bind:withLabel=true
+          v-bind:labelColor="'success'"
+          v-bind:labelContent="'success'"
+          v-bind:isLabelPill=false
+        />
       </b-col>
       <b-col sm="6" md="4">
-        <b-card>
-          <div slot="header">
-            Card with label
-            <div class="card-header-actions">
-              <b-badge pill variant="danger">42</b-badge>
-            </div>
-          </div>
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-        </b-card>
+        <Card
+          v-bind:title="'Card with label'"
+          v-bind:content="'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.'"
+          v-bind:titleInFooter=false
+          v-bind:withActions=true
+          v-bind:withLabel=true
+          v-bind:labelColor="'danger'"
+          v-bind:labelContent="'42'"
+          v-bind:isLabelPill=true
+        />
       </b-col>
     </b-row><!--/.row-->
     <b-row>
       <b-col sm="6" md="4">
-        <b-card header="Card outline primary" border-variant="primary">
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-        </b-card>
+        <Card
+          v-bind:title="'Card outline primary'"
+          v-bind:content="'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.'"
+          v-bind:titleInFooter=false
+          v-bind:outlineColor="'primary'"
+          v-bind:headerData="'Card outline primary'"
+        />
       </b-col>
       <b-col sm="6" md="4">
-        <b-card header="Card outline secondary" border-variant="secondary">
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-        </b-card>
+        <Card
+          v-bind:title="'Card outline secondary'"
+          v-bind:content="'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.'"
+          v-bind:titleInFooter=false
+          v-bind:outlineColor="'secondary'"
+          v-bind:headerData="'Card outline secondary'"
+        />
       </b-col>
       <b-col sm="6" md="4">
-        <b-card header="Card outline success" border-variant="success">
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-        </b-card>
+        <Card
+          v-bind:title="'Card outline success'"
+          v-bind:content="'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.'"
+          v-bind:titleInFooter=false
+          v-bind:outlineColor="'success'"
+          v-bind:headerData="'Card outline success'"
+        />
       </b-col>
       <b-col sm="6" md="4">
-        <b-card header="Card outline info" border-variant="info">
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-        </b-card>
+        <Card
+          v-bind:title="'Card outline info'"
+          v-bind:content="'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.'"
+          v-bind:titleInFooter=false
+          v-bind:outlineColor="'info'"
+          v-bind:headerData="'Card outline info'"
+        />
       </b-col>
       <b-col sm="6" md="4">
-        <b-card header="Card outline warning" border-variant="warning">
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-        </b-card>
+        <Card
+          v-bind:title="'Card outline warning'"
+          v-bind:content="'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.'"
+          v-bind:titleInFooter=false
+          v-bind:outlineColor="'warning'"
+          v-bind:headerData="'Card outline warning'"
+        />
       </b-col>
       <b-col sm="6" md="4">
-        <b-card header="Card outline danger" border-variant="danger">
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-        </b-card>
+        <Card
+          v-bind:title="'Card outline danger'"
+          v-bind:content="'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.'"
+          v-bind:titleInFooter=false
+          v-bind:outlineColor="'danger'"
+          v-bind:headerData="'Card outline danger'"
+        />
       </b-col>
     </b-row><!--/.row-->
 
     <b-row>
       <b-col sm="6" md="4">
-        <b-card class="card-accent-primary" header="Card with primary accent">
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-        </b-card>
+        <Card
+          v-bind:title="'Card with primary accent'"
+          v-bind:content="'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.'"
+          v-bind:titleInFooter=false
+          v-bind:headerData="'Card with primary accent'"
+          v-bind:classes="'card-accent-primary'"
+        />
       </b-col>
       <b-col sm="6" md="4">
-        <b-card class="card-accent-secondary" header="Card with secondary accent">
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-        </b-card>
+        <Card
+          v-bind:title="'Card with secondary accent'"
+          v-bind:content="'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.'"
+          v-bind:titleInFooter=false
+          v-bind:headerData="'Card with secondary accent'"
+          v-bind:classes="'card-accent-secondary'"
+        />
       </b-col>
       <b-col sm="6" md="4">
-        <b-card class="card-accent-success" header="Card with success accent">
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-        </b-card>
+        <Card
+          v-bind:title="'Card with success accent'"
+          v-bind:content="'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.'"
+          v-bind:titleInFooter=false
+          v-bind:headerData="'Card with success accent'"
+          v-bind:classes="'card-accent-success'"
+        />
       </b-col>
       <b-col sm="6" md="4">
-        <b-card class="card-accent-info" header="Card with info accent">
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-        </b-card>
+        <Card
+          v-bind:title="'Card with info accent'"
+          v-bind:content="'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.'"
+          v-bind:titleInFooter=false
+          v-bind:headerData="'Card with info accent'"
+          v-bind:classes="'card-accent-info'"
+        />
       </b-col>
       <b-col sm="6" md="4">
-        <b-card class="card-accent-warning" header="Card with warning accent">
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-        </b-card>
+        <Card
+          v-bind:title="'Card with warning accent'"
+          v-bind:content="'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.'"
+          v-bind:titleInFooter=false
+          v-bind:headerData="'Card with warning accent'"
+          v-bind:classes="'card-accent-warning'"
+        />
       </b-col>
       <b-col sm="6" md="4">
-        <b-card class="card-accent-danger" header="Card with danger accent">
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-        </b-card>
+        <Card
+          v-bind:title="'Card with danger accent'"
+          v-bind:content="'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.'"
+          v-bind:titleInFooter=false
+          v-bind:headerData="'Card with danger accent'"
+          v-bind:classes="'card-accent-danger'"
+        />
       </b-col>
     </b-row><!--/.row-->
     <b-row>
@@ -125,6 +182,7 @@
             v-bind:content="'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.'"
             v-bind:footerContent="'Someone famous in'"
             v-bind:citeContent="'Source Title'"
+            v-bind:footerClasses="'blockquote-footer'"
           />
         </b-card>
       </b-col>
@@ -135,6 +193,7 @@
             v-bind:content="'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.'"
             v-bind:footerContent="'Someone famous in'"
             v-bind:citeContent="'Source Title'"
+            v-bind:footerClasses="'blockquote-footer'"
           />
         </b-card>
       </b-col>
@@ -145,6 +204,7 @@
             v-bind:content="'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.'"
             v-bind:footerContent="'Someone famous in'"
             v-bind:citeContent="'Source Title'"
+            v-bind:footerClasses="'blockquote-footer'"
           />
         </b-card>
       </b-col>
@@ -155,6 +215,7 @@
             v-bind:content="'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.'"
             v-bind:footerContent="'Someone famous in'"
             v-bind:citeContent="'Source Title'"
+            v-bind:footerClasses="'blockquote-footer'"
           />
         </b-card>
       </b-col>
@@ -165,6 +226,7 @@
             v-bind:content="'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.'"
             v-bind:footerContent="'Someone famous in'"
             v-bind:citeContent="'Source Title'"
+            v-bind:footerClasses="'blockquote-footer'"
           />
         </b-card>
       </b-col>
@@ -175,59 +237,72 @@
             v-bind:content="'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.'"
             v-bind:footerContent="'Someone famous in'"
             v-bind:citeContent="'Source Title'"
+            v-bind:footerClasses="'blockquote-footer'"
           />
         </b-card>
       </b-col>
     </b-row><!--/.row-->
     <b-row>
       <b-col sm="6" md="4">
-        <b-card header="Card title" class="bg-primary">
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-        </b-card>
+        <Card
+          v-bind:title="'Card title'"
+          v-bind:content="'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.'"
+          v-bind:titleInFooter=false
+          v-bind:headerData="'Card title'"
+          v-bind:classes="'bg-primary'"
+        />
       </b-col>
       <b-col sm="6" md="4">
-        <b-card header="Card title" class="bg-success">
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-        </b-card>
+        <Card
+          v-bind:title="'Card title'"
+          v-bind:content="'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.'"
+          v-bind:titleInFooter=false
+          v-bind:headerData="'Card title'"
+          v-bind:classes="'bg-success'"
+        />
       </b-col>
       <b-col sm="6" md="4">
-        <b-card header="Card title" class="bg-info">
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-        </b-card>
+        <Card
+          v-bind:title="'Card title'"
+          v-bind:content="'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.'"
+          v-bind:titleInFooter=false
+          v-bind:headerData="'Card title'"
+          v-bind:classes="'bg-info'"
+        />
       </b-col>
       <b-col sm="6" md="4">
-        <b-card header="Card title" class="bg-warning">
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-        </b-card>
+        <Card
+          v-bind:title="'Card title'"
+          v-bind:content="'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.'"
+          v-bind:titleInFooter=false
+          v-bind:headerData="'Card title'"
+          v-bind:classes="'bg-warning'"
+        />
       </b-col>
       <b-col sm="6" md="4">
-        <b-card header="Card title" class="bg-danger">
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-        </b-card>
+        <Card
+          v-bind:title="'Card title'"
+          v-bind:content="'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.'"
+          v-bind:titleInFooter=false
+          v-bind:headerData="'Card title'"
+          v-bind:classes="'bg-danger'"
+        />
       </b-col>
       <b-col sm="6" md="4">
         <transition name="fade">
-          <b-card class="bg-secondary" no-body v-if="show">
-            <div slot="header">
-              Card with header actions
-              <div class="card-header-actions">
-                <b-link href="#" class="card-header-action btn-setting">
-                  <i class="icon-settings"></i>
-                </b-link>
-                <b-link class="card-header-action btn-minimize" v-b-toggle.collapse1>
-                  <i class="icon-arrow-up"></i>
-                </b-link>
-                <b-link href="#" class="card-header-action btn-close" v-on:click="show = !show">
-                  <i class="icon-close"></i>
-                </b-link>
-              </div>
-            </div>
-            <b-collapse id="collapse1" visible>
-              <b-card-body>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-              </b-card-body>
-            </b-collapse>
-          </b-card>
+        <Card
+          v-bind:title="'Card with header actions'"
+          v-bind:content="'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.'"
+          v-bind:titleInFooter=false
+          v-bind:headerData="'Card with header actions'"
+          v-bind:classes="'bg-secondary'"
+          v-bind:withActions=true
+          v-bind:withRightCustomLink=true
+          v-bind:linkCustom="'#'"
+          v-bind:withRightCollapseIcon=true
+          v-bind:withRightCloseIcon=true
+          v-bind:collapseId="'collapsed1'"
+        />
         </transition>
       </b-col>
     </b-row><!--/.row-->
@@ -237,12 +312,15 @@
 <script>
 import { Switch as cSwitch } from '@coreui/vue'
 import Blockquote from '../../components/Blockquote'
+import Card from '../../components/Card'
+
 
 export default {
   name: 'cards',
   components: {
     cSwitch,
-    Blockquote
+    Blockquote,
+    Card,
   },
   data: function () {
     return {
