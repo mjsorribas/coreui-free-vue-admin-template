@@ -121,7 +121,7 @@
       <b-col sm="6" md="4">
         <b-card class="bg-primary text-center">
           <Blockquote
-            v-bind:class="'card-blockquote'"
+            v-bind:classes="'card-blockquote'"
             v-bind:content="'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.'"
             v-bind:footerContent="'Someone famous in'"
             v-bind:citeContent="'Source Title'"
@@ -131,7 +131,7 @@
       <b-col sm="6" md="4">
         <b-card class="bg-success text-center">
           <Blockquote
-            v-bind:class="'card-blockquote'"
+            v-bind:classes="'card-blockquote'"
             v-bind:content="'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.'"
             v-bind:footerContent="'Someone famous in'"
             v-bind:citeContent="'Source Title'"
@@ -141,7 +141,7 @@
       <b-col sm="6" md="4">
         <b-card class="bg-info text-center">
           <Blockquote
-            v-bind:class="'card-blockquote'"
+            v-bind:classes="'card-blockquote'"
             v-bind:content="'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.'"
             v-bind:footerContent="'Someone famous in'"
             v-bind:citeContent="'Source Title'"
@@ -151,7 +151,7 @@
       <b-col sm="6" md="4">
         <b-card class="bg-warning text-center">
           <Blockquote
-            v-bind:class="'card-blockquote'"
+            v-bind:classes="'card-blockquote'"
             v-bind:content="'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.'"
             v-bind:footerContent="'Someone famous in'"
             v-bind:citeContent="'Source Title'"
@@ -161,7 +161,7 @@
       <b-col sm="6" md="4">
         <b-card class="bg-danger text-center">
           <Blockquote
-            v-bind:class="'card-blockquote'"
+            v-bind:classes="'card-blockquote'"
             v-bind:content="'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.'"
             v-bind:footerContent="'Someone famous in'"
             v-bind:citeContent="'Source Title'"
@@ -171,7 +171,7 @@
       <b-col sm="6" md="4">
         <b-card class="bg-secondary text-center">
           <Blockquote
-            v-bind:class="'card-blockquote'"
+            v-bind:classes="'card-blockquote'"
             v-bind:content="'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.'"
             v-bind:footerContent="'Someone famous in'"
             v-bind:citeContent="'Source Title'"
