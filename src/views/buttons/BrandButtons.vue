@@ -10,87 +10,87 @@
           <hr/>
           <h6>Size Small <small>Add <code>size="sm"</code></small></h6>
           <p>
-            <b-button size="sm" class="mr-1 btn-brand" variant="facebook"><i class="fa fa-facebook"></i><span>Facebook</span></b-button>
-            <b-button size="sm" class="mr-1 btn-brand" variant="twitter"><i class="fa fa-twitter"></i><span>Twitter</span></b-button>
-            <b-button size="sm" variant="linkedin" class="mr-1 btn-brand"><i class="fa fa-linkedin"></i><span>LinkedIn</span></b-button>
-            <b-button size="sm" variant="flickr" class="mr-1 btn-brand"><i class="fa fa-flickr"></i><span>Flickr</span></b-button>
-            <b-button size="sm" variant="tumblr" class="mr-1 btn-brand"><i class="fa fa-tumblr"></i><span>Tumblr</span></b-button>
-            <b-button size="sm" variant="xing" class="mr-1 btn-brand"><i class="fa fa-xing"></i><span>Xing</span></b-button>
-            <b-button size="sm" variant="github" class="mr-1 btn-brand"><i class="fa fa-github"></i><span>Github</span></b-button>
-            <b-button size="sm" variant="html5" class="mr-1 btn-brand"><i class="fa fa-html5"></i><span>HTML5</span></b-button>
-            <b-button size="sm" variant="openid" class="mr-1 btn-brand"><i class="fa fa-openid"></i><span>OpenID</span></b-button>
-            <b-button size="sm" variant="stack-overflow" class="mr-1 btn-brand"><i class="fa fa-stack-overflow"></i><span>StackOverflow</span></b-button>
-            <b-button size="sm" variant="css3" class="mr-1 btn-brand"><i class="fa fa-css3"></i><span>CSS3</span></b-button>
-            <b-button size="sm" variant="youtube" class="mr-1 btn-brand"><i class="fa fa-youtube"></i><span>YouTube</span></b-button>
-            <b-button size="sm" variant="dribbble" class="mr-1 btn-brand"><i class="fa fa-dribbble"></i><span>Dribbble</span></b-button>
-            <b-button size="sm" variant="google-plus" class="mr-1 btn-brand"><i class="fa fa-google-plus"></i><span>Google+</span></b-button>
-            <b-button size="sm" variant="instagram" class="mr-1 btn-brand"><i class="fa fa-instagram"></i><span>Instagram</span></b-button>
-            <b-button size="sm" variant="pinterest" class="mr-1 btn-brand"><i class="fa fa-pinterest"></i><span>Pinterest</span></b-button>
-            <b-button size="sm" variant="vk" class="mr-1 btn-brand"><i class="fa fa-vk"></i><span>VK</span></b-button>
-            <b-button size="sm" variant="yahoo" class="mr-1 btn-brand"><i class="fa fa-yahoo"></i><span>Yahoo</span></b-button>
-            <b-button size="sm" variant="behance" class="mr-1 btn-brand"><i class="fa fa-behance"></i><span>Behance</span></b-button>
-            <b-button size="sm" variant="dropbox" class="mr-1 btn-brand"><i class="fa fa-dropbox"></i><span>Dropbox</span></b-button>
-            <b-button size="sm" variant="reddit" class="mr-1 btn-brand"><i class="fa fa-reddit"></i><span>Reddit</span></b-button>
-            <b-button size="sm" variant="spotify" class="mr-1 btn-brand"><i class="fa fa-spotify"></i><span>Spotify</span></b-button>
-            <b-button size="sm" variant="vine" class="mr-1 btn-brand"><i class="fa fa-vine"></i><span>Vine</span></b-button>
-            <b-button size="sm" variant="foursquare" class="mr-1 btn-brand"><i class="fa fa-foursquare"></i><span>Forsquare</span></b-button>
-            <b-button size="sm" variant="vimeo" class="mr-1 btn-brand"><i class="fa fa-vimeo"></i><span>Vimeo</span></b-button>
+            <BrandButton v-bind:size="'sm'" v-bind:variant="'facebook'" v-bind:icon="'fa fa-facebook'" v-bind:title="'Facebook'" />
+            <BrandButton v-bind:size="'sm'" v-bind:variant="'twitter'" v-bind:icon="'fa fa-twitter'" v-bind:title="'Twitter'" />
+            <BrandButton v-bind:size="'sm'" v-bind:variant="'linkedin'" v-bind:icon="'fa fa-linkedin'" v-bind:title="'LinkedIn'" />
+            <BrandButton v-bind:size="'sm'" v-bind:variant="'flickr'" v-bind:icon="'fa fa-flickr'" v-bind:title="'Flickr'" />
+            <BrandButton v-bind:size="'sm'" v-bind:variant="'tumblr'" v-bind:icon="'fa fa-tumblr'" v-bind:title="'Tumblr'" />
+            <BrandButton v-bind:size="'sm'" v-bind:variant="'xing'" v-bind:icon="'fa fa-xing'" v-bind:title="'Xing'" />
+            <BrandButton v-bind:size="'sm'" v-bind:variant="'github'" v-bind:icon="'fa fa-github'" v-bind:title="'Github'" />
+            <BrandButton v-bind:size="'sm'" v-bind:variant="'html5'" v-bind:icon="'fa fa-html5'" v-bind:title="'HTML5'" />
+            <BrandButton v-bind:size="'sm'" v-bind:variant="'openid'" v-bind:icon="'fa fa-openid'" v-bind:title="'OpenID'" />
+            <BrandButton v-bind:size="'sm'" v-bind:variant="'stack-overflow'" v-bind:icon="'fa fa-stack-overflow'" v-bind:title="'StackOverflow'" />
+            <BrandButton v-bind:size="'sm'" v-bind:variant="'css3'" v-bind:icon="'fa fa-css3'" v-bind:title="'CSS3'" />
+            <BrandButton v-bind:size="'sm'" v-bind:variant="'youtube'" v-bind:icon="'fa fa-youtube'" v-bind:title="'YouTube'" />
+            <BrandButton v-bind:size="'sm'" v-bind:variant="'dribbble'" v-bind:icon="'fa fa-dribbble'" v-bind:title="'Dribbble'" />
+            <BrandButton v-bind:size="'sm'" v-bind:variant="'google-plus'" v-bind:icon="'fa fa-google-plus'" v-bind:title="'Google+'" />
+            <BrandButton v-bind:size="'sm'" v-bind:variant="'instagram'" v-bind:icon="'fa fa-instagram'" v-bind:title="'Instagram'" />
+            <BrandButton v-bind:size="'sm'" v-bind:variant="'pinterest'" v-bind:icon="'fa fa-pinterest'" v-bind:title="'Pinterest'" />
+            <BrandButton v-bind:size="'sm'" v-bind:variant="'vk'" v-bind:icon="'fa fa-vk'" v-bind:title="'VK'" />
+            <BrandButton v-bind:size="'sm'" v-bind:variant="'yahoo'" v-bind:icon="'fa fa-yahoo'" v-bind:title="'Yahoo'" />
+            <BrandButton v-bind:size="'sm'" v-bind:variant="'behance'" v-bind:icon="'fa fa-behance'" v-bind:title="'Behance'" />
+            <BrandButton v-bind:size="'sm'" v-bind:variant="'dropbox'" v-bind:icon="'fa fa-dropbox'" v-bind:title="'Dropbox'" />
+            <BrandButton v-bind:size="'sm'" v-bind:variant="'reddit'" v-bind:icon="'fa fa-reddit'" v-bind:title="'Reddit'" />
+            <BrandButton v-bind:size="'sm'" v-bind:variant="'spotify'" v-bind:icon="'fa fa-spotify'" v-bind:title="'Spotify'" />
+            <BrandButton v-bind:size="'sm'" v-bind:variant="'vine'" v-bind:icon="'fa fa-vine'" v-bind:title="'Vine'" />
+            <BrandButton v-bind:size="'sm'" v-bind:variant="'foursquare'" v-bind:icon="'fa fa-foursquare'" v-bind:title="'Forsquare'" />
+            <BrandButton v-bind:size="'sm'" v-bind:variant="'vimeo'" v-bind:icon="'fa fa-vimeo'" v-bind:title="'Vimeo'" />
           </p>
           <h6>Size Normal</h6>
           <p>
-            <b-button variant="facebook" class="mr-1 btn-brand"><i class="fa fa-facebook"></i><span>Facebook</span></b-button>
-            <b-button variant="twitter" class="mr-1 btn-brand"><i class="fa fa-twitter"></i><span>Twitter</span></b-button>
-            <b-button variant="linkedin" class="mr-1 btn-brand"><i class="fa fa-linkedin"></i><span>LinkedIn</span></b-button>
-            <b-button variant="flickr" class="mr-1 btn-brand"><i class="fa fa-flickr"></i><span>Flickr</span></b-button>
-            <b-button variant="tumblr" class="mr-1 btn-brand"><i class="fa fa-tumblr"></i><span>Tumblr</span></b-button>
-            <b-button variant="xing" class="mr-1 btn-brand"><i class="fa fa-xing"></i><span>Xing</span></b-button>
-            <b-button variant="github" class="mr-1 btn-brand"><i class="fa fa-github"></i><span>Github</span></b-button>
-            <b-button variant="html5" class="mr-1 btn-brand"><i class="fa fa-html5"></i><span>HTML5</span></b-button>
-            <b-button variant="openid" class="mr-1 btn-brand"><i class="fa fa-openid"></i><span>OpenID</span></b-button>
-            <b-button variant="stack-overflow" class="mr-1 btn-brand"><i class="fa fa-stack-overflow"></i><span>StackOverflow</span></b-button>
-            <b-button variant="css3" class="mr-1 btn-brand"><i class="fa fa-css3"></i><span>CSS3</span></b-button>
-            <b-button variant="youtube" class="mr-1 btn-brand"><i class="fa fa-youtube"></i><span>YouTube</span></b-button>
-            <b-button variant="dribbble" class="mr-1 btn-brand"><i class="fa fa-dribbble"></i><span>Dribbble</span></b-button>
-            <b-button variant="google-plus" class="mr-1 btn-brand"><i class="fa fa-google-plus"></i><span>Google+</span></b-button>
-            <b-button variant="instagram" class="mr-1 btn-brand"><i class="fa fa-instagram"></i><span>Instagram</span></b-button>
-            <b-button variant="pinterest" class="mr-1 btn-brand"><i class="fa fa-pinterest"></i><span>Pinterest</span></b-button>
-            <b-button variant="vk" class="mr-1 btn-brand"><i class="fa fa-vk"></i><span>VK</span></b-button>
-            <b-button variant="yahoo" class="mr-1 btn-brand"><i class="fa fa-yahoo"></i><span>Yahoo</span></b-button>
-            <b-button variant="behance" class="mr-1 btn-brand"><i class="fa fa-behance"></i><span>Behance</span></b-button>
-            <b-button variant="dropbox" class="mr-1 btn-brand"><i class="fa fa-dropbox"></i><span>Dropbox</span></b-button>
-            <b-button variant="reddit" class="mr-1 btn-brand"><i class="fa fa-reddit"></i><span>Reddit</span></b-button>
-            <b-button variant="spotify" class="mr-1 btn-brand"><i class="fa fa-spotify"></i><span>Spotify</span></b-button>
-            <b-button variant="vine" class="mr-1 btn-brand"><i class="fa fa-vine"></i><span>Vine</span></b-button>
-            <b-button variant="foursquare" class="mr-1 btn-brand"><i class="fa fa-foursquare"></i><span>Forsquare</span></b-button>
-            <b-button variant="vimeo" class="mr-1 btn-brand"><i class="fa fa-vimeo"></i><span>Vimeo</span></b-button>
+            <BrandButton v-bind:variant="'facebook'" v-bind:icon="'fa fa-facebook'" v-bind:title="'Facebook'" />
+            <BrandButton v-bind:variant="'twitter'" v-bind:icon="'fa fa-twitter'" v-bind:title="'Twitter'" />
+            <BrandButton v-bind:variant="'linkedin'" v-bind:icon="'fa fa-linkedin'" v-bind:title="'LinkedIn'" />
+            <BrandButton v-bind:variant="'flickr'" v-bind:icon="'fa fa-flickr'" v-bind:title="'Flickr'" />
+            <BrandButton v-bind:variant="'tumblr'" v-bind:icon="'fa fa-tumblr'" v-bind:title="'Tumblr'" />
+            <BrandButton v-bind:variant="'xing'" v-bind:icon="'fa fa-xing'" v-bind:title="'Xing'" />
+            <BrandButton v-bind:variant="'github'" v-bind:icon="'fa fa-github'" v-bind:title="'Github'" />
+            <BrandButton v-bind:variant="'html5'" v-bind:icon="'fa fa-html5'" v-bind:title="'HTML5'" />
+            <BrandButton v-bind:variant="'openid'" v-bind:icon="'fa fa-openid'" v-bind:title="'OpenID'" />
+            <BrandButton v-bind:variant="'stack-overflow'" v-bind:icon="'fa fa-stack-overflow'" v-bind:title="'StackOverflow'" />
+            <BrandButton v-bind:variant="'css3'" v-bind:icon="'fa fa-css3'" v-bind:title="'CSS3'" />
+            <BrandButton v-bind:variant="'youtube'" v-bind:icon="'fa fa-youtube'" v-bind:title="'YouTube'" />
+            <BrandButton v-bind:variant="'dribbble'" v-bind:icon="'fa fa-dribbble'" v-bind:title="'Dribbble'" />
+            <BrandButton v-bind:variant="'google-plus'" v-bind:icon="'fa fa-google-plus'" v-bind:title="'Google+'" />
+            <BrandButton v-bind:variant="'instagram'" v-bind:icon="'fa fa-instagram'" v-bind:title="'Instagram'" />
+            <BrandButton v-bind:variant="'pinterest'" v-bind:icon="'fa fa-pinterest'" v-bind:title="'Pinterest'" />
+            <BrandButton v-bind:variant="'vk'" v-bind:icon="'fa fa-vk'" v-bind:title="'VK'" />
+            <BrandButton v-bind:variant="'yahoo'" v-bind:icon="'fa fa-yahoo'" v-bind:title="'Yahoo'" />
+            <BrandButton v-bind:variant="'behance'" v-bind:icon="'fa fa-behance'" v-bind:title="'Behance'" />
+            <BrandButton v-bind:variant="'dropbox'" v-bind:icon="'fa fa-dropbox'" v-bind:title="'Dropbox'" />
+            <BrandButton v-bind:variant="'reddit'" v-bind:icon="'fa fa-reddit'" v-bind:title="'Reddit'" />
+            <BrandButton v-bind:variant="'spotify'" v-bind:icon="'fa fa-spotify'" v-bind:title="'Spotify'" />
+            <BrandButton v-bind:variant="'vine'" v-bind:icon="'fa fa-vine'" v-bind:title="'Vine'" />
+            <BrandButton v-bind:variant="'foursquare'" v-bind:icon="'fa fa-foursquare'" v-bind:title="'Forsquare'" />
+            <BrandButton v-bind:variant="'vimeo'" v-bind:icon="'fa fa-vimeo'" v-bind:title="'Vimeo'" />
           </p>
           <h6>Size Large <small>Add <code>size="lg"</code></small></h6>
           <p>
-            <b-button size="lg" variant="facebook" class="mr-1 btn-brand"><i class="fa fa-facebook"></i><span>Facebook</span></b-button>
-            <b-button size="lg" variant="twitter" class="mr-1 btn-brand"><i class="fa fa-twitter"></i><span>Twitter</span></b-button>
-            <b-button size="lg" variant="linkedin" class="mr-1 btn-brand"><i class="fa fa-linkedin"></i><span>LinkedIn</span></b-button>
-            <b-button size="lg" variant="flickr" class="mr-1 btn-brand"><i class="fa fa-flickr"></i><span>Flickr</span></b-button>
-            <b-button size="lg" variant="tumblr" class="mr-1 btn-brand"><i class="fa fa-tumblr"></i><span>Tumblr</span></b-button>
-            <b-button size="lg" variant="xing" class="mr-1 btn-brand"><i class="fa fa-xing"></i><span>Xing</span></b-button>
-            <b-button size="lg" variant="github" class="mr-1 btn-brand"><i class="fa fa-github"></i><span>Github</span></b-button>
-            <b-button size="lg" variant="html5" class="mr-1 btn-brand"><i class="fa fa-html5"></i><span>HTML5</span></b-button>
-            <b-button size="lg" variant="openid" class="mr-1 btn-brand"><i class="fa fa-openid"></i><span>OpenID</span></b-button>
-            <b-button size="lg" variant="stack-overflow" class="mr-1 btn-brand"><i class="fa fa-stack-overflow"></i><span>StackOverflow</span></b-button>
-            <b-button size="lg" variant="css3" class="mr-1 btn-brand"><i class="fa fa-css3"></i><span>CSS3</span></b-button>
-            <b-button size="lg" variant="youtube" class="mr-1 btn-brand"><i class="fa fa-youtube"></i><span>YouTube</span></b-button>
-            <b-button size="lg" variant="dribbble" class="mr-1 btn-brand"><i class="fa fa-dribbble"></i><span>Dribbble</span></b-button>
-            <b-button size="lg" variant="google-plus" class="mr-1 btn-brand"><i class="fa fa-google-plus"></i><span>Google+</span></b-button>
-            <b-button size="lg" variant="instagram" class="mr-1 btn-brand"><i class="fa fa-instagram"></i><span>Instagram</span></b-button>
-            <b-button size="lg" variant="pinterest" class="mr-1 btn-brand"><i class="fa fa-pinterest"></i><span>Pinterest</span></b-button>
-            <b-button size="lg" variant="vk" class="mr-1 btn-brand"><i class="fa fa-vk"></i><span>VK</span></b-button>
-            <b-button size="lg" variant="yahoo" class="mr-1 btn-brand"><i class="fa fa-yahoo"></i><span>Yahoo</span></b-button>
-            <b-button size="lg" variant="behance" class="mr-1 btn-brand"><i class="fa fa-behance"></i><span>Behance</span></b-button>
-            <b-button size="lg" variant="dropbox" class="mr-1 btn-brand"><i class="fa fa-dropbox"></i><span>Dropbox</span></b-button>
-            <b-button size="lg" variant="reddit" class="mr-1 btn-brand"><i class="fa fa-reddit"></i><span>Reddit</span></b-button>
-            <b-button size="lg" variant="spotify" class="mr-1 btn-brand"><i class="fa fa-spotify"></i><span>Spotify</span></b-button>
-            <b-button size="lg" variant="vine" class="mr-1 btn-brand"><i class="fa fa-vine"></i><span>Vine</span></b-button>
-            <b-button size="lg" variant="foursquare" class="mr-1 btn-brand"><i class="fa fa-foursquare"></i><span>Forsquare</span></b-button>
-            <b-button size="lg" variant="vimeo" class="mr-1 btn-brand"><i class="fa fa-vimeo"></i><span>Vimeo</span></b-button>
+            <BrandButton v-bind:size="'lg'" v-bind:variant="'facebook'" v-bind:icon="'fa fa-facebook'" v-bind:title="'Facebook'" />
+            <BrandButton v-bind:size="'lg'" v-bind:variant="'twitter'" v-bind:icon="'fa fa-twitter'" v-bind:title="'Twitter'" />
+            <BrandButton v-bind:size="'lg'" v-bind:variant="'linkedin'" v-bind:icon="'fa fa-linkedin'" v-bind:title="'LinkedIn'" />
+            <BrandButton v-bind:size="'lg'" v-bind:variant="'flickr'" v-bind:icon="'fa fa-flickr'" v-bind:title="'Flickr'" />
+            <BrandButton v-bind:size="'lg'" v-bind:variant="'tumblr'" v-bind:icon="'fa fa-tumblr'" v-bind:title="'Tumblr'" />
+            <BrandButton v-bind:size="'lg'" v-bind:variant="'xing'" v-bind:icon="'fa fa-xing'" v-bind:title="'Xing'" />
+            <BrandButton v-bind:size="'lg'" v-bind:variant="'github'" v-bind:icon="'fa fa-github'" v-bind:title="'Github'" />
+            <BrandButton v-bind:size="'lg'" v-bind:variant="'html5'" v-bind:icon="'fa fa-html5'" v-bind:title="'HTML5'" />
+            <BrandButton v-bind:size="'lg'" v-bind:variant="'openid'" v-bind:icon="'fa fa-openid'" v-bind:title="'OpenID'" />
+            <BrandButton v-bind:size="'lg'" v-bind:variant="'stack-overflow'" v-bind:icon="'fa fa-stack-overflow'" v-bind:title="'StackOverflow'" />
+            <BrandButton v-bind:size="'lg'" v-bind:variant="'css3'" v-bind:icon="'fa fa-css3'" v-bind:title="'CSS3'" />
+            <BrandButton v-bind:size="'lg'" v-bind:variant="'youtube'" v-bind:icon="'fa fa-youtube'" v-bind:title="'YouTube'" />
+            <BrandButton v-bind:size="'lg'" v-bind:variant="'dribbble'" v-bind:icon="'fa fa-dribbble'" v-bind:title="'Dribbble'" />
+            <BrandButton v-bind:size="'lg'" v-bind:variant="'google-plus'" v-bind:icon="'fa fa-google-plus'" v-bind:title="'Google+'" />
+            <BrandButton v-bind:size="'lg'" v-bind:variant="'instagram'" v-bind:icon="'fa fa-instagram'" v-bind:title="'Instagram'" />
+            <BrandButton v-bind:size="'lg'" v-bind:variant="'pinterest'" v-bind:icon="'fa fa-pinterest'" v-bind:title="'Pinterest'" />
+            <BrandButton v-bind:size="'lg'" v-bind:variant="'vk'" v-bind:icon="'fa fa-vk'" v-bind:title="'VK'" />
+            <BrandButton v-bind:size="'lg'" v-bind:variant="'yahoo'" v-bind:icon="'fa fa-yahoo'" v-bind:title="'Yahoo'" />
+            <BrandButton v-bind:size="'lg'" v-bind:variant="'behance'" v-bind:icon="'fa fa-behance'" v-bind:title="'Behance'" />
+            <BrandButton v-bind:size="'lg'" v-bind:variant="'dropbox'" v-bind:icon="'fa fa-dropbox'" v-bind:title="'Dropbox'" />
+            <BrandButton v-bind:size="'lg'" v-bind:variant="'reddit'" v-bind:icon="'fa fa-reddit'" v-bind:title="'Reddit'" />
+            <BrandButton v-bind:size="'lg'" v-bind:variant="'spotify'" v-bind:icon="'fa fa-spotify'" v-bind:title="'Spotify'" />
+            <BrandButton v-bind:size="'lg'" v-bind:variant="'vine'" v-bind:icon="'fa fa-vine'" v-bind:title="'Vine'" />
+            <BrandButton v-bind:size="'lg'" v-bind:variant="'foursquare'" v-bind:icon="'fa fa-foursquare'" v-bind:title="'Forsquare'" />
+            <BrandButton v-bind:size="'lg'" v-bind:variant="'vimeo'" v-bind:icon="'fa fa-vimeo'" v-bind:title="'Vimeo'" />
           </p>
         </b-card>
       </b-col><!--/.col-->
@@ -103,87 +103,87 @@
           <hr/>
           <h6>Size Small <small>Add <code>size="sm"</code></small></h6>
           <p>
-            <b-button size="sm" variant="facebook icon" class="mr-1 btn-brand"><i class="fa fa-facebook"></i></b-button>
-            <b-button size="sm" variant="twitter icon" class="mr-1 btn-brand"><i class="fa fa-twitter"></i></b-button>
-            <b-button size="sm" variant="linkedin icon" class="mr-1 btn-brand"><i class="fa fa-linkedin"></i></b-button>
-            <b-button size="sm" variant="flickr icon" class="mr-1 btn-brand"><i class="fa fa-flickr"></i></b-button>
-            <b-button size="sm" variant="tumblr icon" class="mr-1 btn-brand"><i class="fa fa-tumblr"></i></b-button>
-            <b-button size="sm" variant="xing icon" class="mr-1 btn-brand"><i class="fa fa-xing"></i></b-button>
-            <b-button size="sm" variant="github icon" class="mr-1 btn-brand"><i class="fa fa-github"></i></b-button>
-            <b-button size="sm" variant="html5 icon" class="mr-1 btn-brand"><i class="fa fa-html5"></i></b-button>
-            <b-button size="sm" variant="openid icon" class="mr-1 btn-brand"><i class="fa fa-openid"></i></b-button>
-            <b-button size="sm" variant="stack-overflow icon" class="mr-1 btn-brand"><i class="fa fa-stack-overflow"></i></b-button>
-            <b-button size="sm" variant="css3 icon" class="mr-1 btn-brand"><i class="fa fa-css3"></i></b-button>
-            <b-button size="sm" variant="youtube icon" class="mr-1 btn-brand"><i class="fa fa-youtube"></i></b-button>
-            <b-button size="sm" variant="dribbble icon" class="mr-1 btn-brand"><i class="fa fa-dribbble"></i></b-button>
-            <b-button size="sm" variant="google-plus icon" class="mr-1 btn-brand"><i class="fa fa-google-plus"></i></b-button>
-            <b-button size="sm" variant="instagram icon" class="mr-1 btn-brand"><i class="fa fa-instagram"></i></b-button>
-            <b-button size="sm" variant="pinterest icon" class="mr-1 btn-brand"><i class="fa fa-pinterest"></i></b-button>
-            <b-button size="sm" variant="vk icon" class="mr-1 btn-brand"><i class="fa fa-vk"></i></b-button>
-            <b-button size="sm" variant="yahoo icon" class="mr-1 btn-brand"><i class="fa fa-yahoo"></i></b-button>
-            <b-button size="sm" variant="behance icon" class="mr-1 btn-brand"><i class="fa fa-behance"></i></b-button>
-            <b-button size="sm" variant="dropbox icon" class="mr-1 btn-brand"><i class="fa fa-dropbox"></i></b-button>
-            <b-button size="sm" variant="reddit icon" class="mr-1 btn-brand"><i class="fa fa-reddit"></i></b-button>
-            <b-button size="sm" variant="spotify icon" class="mr-1 btn-brand"><i class="fa fa-spotify"></i></b-button>
-            <b-button size="sm" variant="vine icon" class="mr-1 btn-brand"><i class="fa fa-vine"></i></b-button>
-            <b-button size="sm" variant="foursquare icon" class="mr-1 btn-brand"><i class="fa fa-foursquare"></i></b-button>
-            <b-button size="sm" variant="vimeo icon" class="mr-1 btn-brand"><i class="fa fa-vimeo"></i></b-button>
+            <BrandButton v-bind:size="'sm'" v-bind:variant="'facebook icon'" v-bind:icon="'fa fa-facebook'" />
+            <BrandButton v-bind:size="'sm'" v-bind:variant="'twitter  icon'" v-bind:icon="'fa fa-twitter'"  />
+            <BrandButton v-bind:size="'sm'" v-bind:variant="'linkedin icon'" v-bind:icon="'fa fa-linkedin'" />
+            <BrandButton v-bind:size="'sm'" v-bind:variant="'flickr icon'" v-bind:icon="'fa fa-flickr'" />
+            <BrandButton v-bind:size="'sm'" v-bind:variant="'tumblr icon'" v-bind:icon="'fa fa-tumblr'" />
+            <BrandButton v-bind:size="'sm'" v-bind:variant="'xing icon'" v-bind:icon="'fa fa-xing'" />
+            <BrandButton v-bind:size="'sm'" v-bind:variant="'github icon'" v-bind:icon="'fa fa-github'" />
+            <BrandButton v-bind:size="'sm'" v-bind:variant="'html5 icon'" v-bind:icon="'fa fa-html5'" />
+            <BrandButton v-bind:size="'sm'" v-bind:variant="'openid icon'" v-bind:icon="'fa fa-openid'" />
+            <BrandButton v-bind:size="'sm'" v-bind:variant="'stack-overflow icon'" v-bind:icon="'fa fa-stack-overflow'" />
+            <BrandButton v-bind:size="'sm'" v-bind:variant="'css3 icon'" v-bind:icon="'fa fa-css3'" />
+            <BrandButton v-bind:size="'sm'" v-bind:variant="'youtube icon'" v-bind:icon="'fa fa-youtube'" />
+            <BrandButton v-bind:size="'sm'" v-bind:variant="'dribbble icon'" v-bind:icon="'fa fa-dribbble'" />
+            <BrandButton v-bind:size="'sm'" v-bind:variant="'google-plus icon'" v-bind:icon="'fa fa-google-plus'" />
+            <BrandButton v-bind:size="'sm'" v-bind:variant="'instagram icon'" v-bind:icon="'fa fa-instagram'" />
+            <BrandButton v-bind:size="'sm'" v-bind:variant="'pinterest icon'" v-bind:icon="'fa fa-pinterest'" />
+            <BrandButton v-bind:size="'sm'" v-bind:variant="'vk icon'" v-bind:icon="'fa fa-vk'" />
+            <BrandButton v-bind:size="'sm'" v-bind:variant="'yahoo icon'" v-bind:icon="'fa fa-yahoo'" />
+            <BrandButton v-bind:size="'sm'" v-bind:variant="'behance icon'" v-bind:icon="'fa fa-behance'" />
+            <BrandButton v-bind:size="'sm'" v-bind:variant="'dropbox icon'" v-bind:icon="'fa fa-dropbox'" />
+            <BrandButton v-bind:size="'sm'" v-bind:variant="'reddit icon'" v-bind:icon="'fa fa-reddit'" />
+            <BrandButton v-bind:size="'sm'" v-bind:variant="'spotify icon'" v-bind:icon="'fa fa-spotify'" />
+            <BrandButton v-bind:size="'sm'" v-bind:variant="'vine icon'" v-bind:icon="'fa fa-vine'" />
+            <BrandButton v-bind:size="'sm'" v-bind:variant="'foursquare icon'" v-bind:icon="'fa fa-foursquare'" />
+            <BrandButton v-bind:size="'sm'" v-bind:variant="'vimeo icon'" v-bind:icon="'fa fa-vimeo'" />
           </p>
           <h6>Size Normal</h6>
           <p>
-            <b-button variant="facebook icon" class="mr-1 btn-brand"><i class="fa fa-facebook"></i></b-button>
-            <b-button variant="twitter icon" class="mr-1 btn-brand"><i class="fa fa-twitter"></i></b-button>
-            <b-button variant="linkedin icon" class="mr-1 btn-brand"><i class="fa fa-linkedin"></i></b-button>
-            <b-button variant="flickr icon" class="mr-1 btn-brand"><i class="fa fa-flickr"></i></b-button>
-            <b-button variant="tumblr icon" class="mr-1 btn-brand"><i class="fa fa-tumblr"></i></b-button>
-            <b-button variant="xing icon" class="mr-1 btn-brand"><i class="fa fa-xing"></i></b-button>
-            <b-button variant="github icon" class="mr-1 btn-brand"><i class="fa fa-github"></i></b-button>
-            <b-button variant="html5 icon" class="mr-1 btn-brand"><i class="fa fa-html5"></i></b-button>
-            <b-button variant="openid icon" class="mr-1 btn-brand"><i class="fa fa-openid"></i></b-button>
-            <b-button variant="stack-overflow icon" class="mr-1 btn-brand"><i class="fa fa-stack-overflow"></i></b-button>
-            <b-button variant="css3 icon" class="mr-1 btn-brand"><i class="fa fa-css3"></i></b-button>
-            <b-button variant="youtube icon" class="mr-1 btn-brand"><i class="fa fa-youtube"></i></b-button>
-            <b-button variant="dribbble icon" class="mr-1 btn-brand"><i class="fa fa-dribbble"></i></b-button>
-            <b-button variant="google-plus icon" class="mr-1 btn-brand"><i class="fa fa-google-plus"></i></b-button>
-            <b-button variant="instagram icon" class="mr-1 btn-brand"><i class="fa fa-instagram"></i></b-button>
-            <b-button variant="pinterest icon" class="mr-1 btn-brand"><i class="fa fa-pinterest"></i></b-button>
-            <b-button variant="vk icon" class="mr-1 btn-brand"><i class="fa fa-vk"></i></b-button>
-            <b-button variant="yahoo icon" class="mr-1 btn-brand"><i class="fa fa-yahoo"></i></b-button>
-            <b-button variant="behance icon" class="mr-1 btn-brand"><i class="fa fa-behance"></i></b-button>
-            <b-button variant="dropbox icon" class="mr-1 btn-brand"><i class="fa fa-dropbox"></i></b-button>
-            <b-button variant="reddit icon" class="mr-1 btn-brand"><i class="fa fa-reddit"></i></b-button>
-            <b-button variant="spotify icon" class="mr-1 btn-brand"><i class="fa fa-spotify"></i></b-button>
-            <b-button variant="vine icon" class="mr-1 btn-brand"><i class="fa fa-vine"></i></b-button>
-            <b-button variant="foursquare icon" class="mr-1 btn-brand"><i class="fa fa-foursquare"></i></b-button>
-            <b-button variant="vimeo icon" class="mr-1 btn-brand"><i class="fa fa-vimeo"></i></b-button>
+            <BrandButton v-bind:variant="'facebook icon'" v-bind:icon="'fa fa-facebook'" />
+            <BrandButton v-bind:variant="'twitter  icon'" v-bind:icon="'fa fa-twitter'"  />
+            <BrandButton v-bind:variant="'linkedin icon'" v-bind:icon="'fa fa-linkedin'" />
+            <BrandButton v-bind:variant="'flickr icon'" v-bind:icon="'fa fa-flickr'" />
+            <BrandButton v-bind:variant="'tumblr icon'" v-bind:icon="'fa fa-tumblr'" />
+            <BrandButton v-bind:variant="'xing icon'" v-bind:icon="'fa fa-xing'" />
+            <BrandButton v-bind:variant="'github icon'" v-bind:icon="'fa fa-github'" />
+            <BrandButton v-bind:variant="'html5 icon'" v-bind:icon="'fa fa-html5'" />
+            <BrandButton v-bind:variant="'openid icon'" v-bind:icon="'fa fa-openid'" />
+            <BrandButton v-bind:variant="'stack-overflow icon'" v-bind:icon="'fa fa-stack-overflow'" />
+            <BrandButton v-bind:variant="'css3 icon'" v-bind:icon="'fa fa-css3'" />
+            <BrandButton v-bind:variant="'youtube icon'" v-bind:icon="'fa fa-youtube'" />
+            <BrandButton v-bind:variant="'dribbble icon'" v-bind:icon="'fa fa-dribbble'" />
+            <BrandButton v-bind:variant="'google-plus icon'" v-bind:icon="'fa fa-google-plus'" />
+            <BrandButton v-bind:variant="'instagram icon'" v-bind:icon="'fa fa-instagram'" />
+            <BrandButton v-bind:variant="'pinterest icon'" v-bind:icon="'fa fa-pinterest'" />
+            <BrandButton v-bind:variant="'vk icon'" v-bind:icon="'fa fa-vk'" />
+            <BrandButton v-bind:variant="'yahoo icon'" v-bind:icon="'fa fa-yahoo'" />
+            <BrandButton v-bind:variant="'behance icon'" v-bind:icon="'fa fa-behance'" />
+            <BrandButton v-bind:variant="'dropbox icon'" v-bind:icon="'fa fa-dropbox'" />
+            <BrandButton v-bind:variant="'reddit icon'" v-bind:icon="'fa fa-reddit'" />
+            <BrandButton v-bind:variant="'spotify icon'" v-bind:icon="'fa fa-spotify'" />
+            <BrandButton v-bind:variant="'vine icon'" v-bind:icon="'fa fa-vine'" />
+            <BrandButton v-bind:variant="'foursquare icon'" v-bind:icon="'fa fa-foursquare'" />
+            <BrandButton v-bind:variant="'vimeo icon'" v-bind:icon="'fa fa-vimeo'" />
           </p>
           <h6>Size Large <small>Add <code>size="lg"</code></small></h6>
           <p>
-            <b-button size="lg" variant="facebook icon" class="mr-1 btn-brand"><i class="fa fa-facebook"></i></b-button>
-            <b-button size="lg" variant="twitter icon" class="mr-1 btn-brand"><i class="fa fa-twitter"></i></b-button>
-            <b-button size="lg" variant="linkedin icon" class="mr-1 btn-brand"><i class="fa fa-linkedin"></i></b-button>
-            <b-button size="lg" variant="flickr icon" class="mr-1 btn-brand"><i class="fa fa-flickr"></i></b-button>
-            <b-button size="lg" variant="tumblr icon" class="mr-1 btn-brand"><i class="fa fa-tumblr"></i></b-button>
-            <b-button size="lg" variant="xing icon" class="mr-1 btn-brand"><i class="fa fa-xing"></i></b-button>
-            <b-button size="lg" variant="github icon" class="mr-1 btn-brand"><i class="fa fa-github"></i></b-button>
-            <b-button size="lg" variant="html5 icon" class="mr-1 btn-brand"><i class="fa fa-html5"></i></b-button>
-            <b-button size="lg" variant="openid icon" class="mr-1 btn-brand"><i class="fa fa-openid"></i></b-button>
-            <b-button size="lg" variant="stack-overflow icon" class="mr-1 btn-brand"><i class="fa fa-stack-overflow"></i></b-button>
-            <b-button size="lg" variant="css3 icon" class="mr-1 btn-brand"><i class="fa fa-css3"></i></b-button>
-            <b-button size="lg" variant="youtube icon" class="mr-1 btn-brand"><i class="fa fa-youtube"></i></b-button>
-            <b-button size="lg" variant="dribbble icon" class="mr-1 btn-brand"><i class="fa fa-dribbble"></i></b-button>
-            <b-button size="lg" variant="google-plus icon" class="mr-1 btn-brand"><i class="fa fa-google-plus"></i></b-button>
-            <b-button size="lg" variant="instagram icon" class="mr-1 btn-brand"><i class="fa fa-instagram"></i></b-button>
-            <b-button size="lg" variant="pinterest icon" class="mr-1 btn-brand"><i class="fa fa-pinterest"></i></b-button>
-            <b-button size="lg" variant="vk icon" class="mr-1 btn-brand"><i class="fa fa-vk"></i></b-button>
-            <b-button size="lg" variant="yahoo icon" class="mr-1 btn-brand"><i class="fa fa-yahoo"></i></b-button>
-            <b-button size="lg" variant="behance icon" class="mr-1 btn-brand"><i class="fa fa-behance"></i></b-button>
-            <b-button size="lg" variant="dropbox icon" class="mr-1 btn-brand"><i class="fa fa-dropbox"></i></b-button>
-            <b-button size="lg" variant="reddit icon" class="mr-1 btn-brand"><i class="fa fa-reddit"></i></b-button>
-            <b-button size="lg" variant="spotify icon" class="mr-1 btn-brand"><i class="fa fa-spotify"></i></b-button>
-            <b-button size="lg" variant="vine icon" class="mr-1 btn-brand"><i class="fa fa-vine"></i></b-button>
-            <b-button size="lg" variant="foursquare icon" class="mr-1 btn-brand"><i class="fa fa-foursquare"></i></b-button>
-            <b-button size="lg" variant="vimeo icon" class="mr-1 btn-brand"><i class="fa fa-vimeo"></i></b-button>
+            <BrandButton v-bind:size="'lg'" v-bind:variant="'facebook icon'" v-bind:icon="'fa fa-facebook'" />
+            <BrandButton v-bind:size="'lg'" v-bind:variant="'twitter  icon'" v-bind:icon="'fa fa-twitter'"  />
+            <BrandButton v-bind:size="'lg'" v-bind:variant="'linkedin icon'" v-bind:icon="'fa fa-linkedin'" />
+            <BrandButton v-bind:size="'lg'" v-bind:variant="'flickr icon'" v-bind:icon="'fa fa-flickr'" />
+            <BrandButton v-bind:size="'lg'" v-bind:variant="'tumblr icon'" v-bind:icon="'fa fa-tumblr'" />
+            <BrandButton v-bind:size="'lg'" v-bind:variant="'xing icon'" v-bind:icon="'fa fa-xing'" />
+            <BrandButton v-bind:size="'lg'" v-bind:variant="'github icon'" v-bind:icon="'fa fa-github'" />
+            <BrandButton v-bind:size="'lg'" v-bind:variant="'html5 icon'" v-bind:icon="'fa fa-html5'" />
+            <BrandButton v-bind:size="'lg'" v-bind:variant="'openid icon'" v-bind:icon="'fa fa-openid'" />
+            <BrandButton v-bind:size="'lg'" v-bind:variant="'stack-overflow icon'" v-bind:icon="'fa fa-stack-overflow'" />
+            <BrandButton v-bind:size="'lg'" v-bind:variant="'css3 icon'" v-bind:icon="'fa fa-css3'" />
+            <BrandButton v-bind:size="'lg'" v-bind:variant="'youtube icon'" v-bind:icon="'fa fa-youtube'" />
+            <BrandButton v-bind:size="'lg'" v-bind:variant="'dribbble icon'" v-bind:icon="'fa fa-dribbble'" />
+            <BrandButton v-bind:size="'lg'" v-bind:variant="'google-plus icon'" v-bind:icon="'fa fa-google-plus'" />
+            <BrandButton v-bind:size="'lg'" v-bind:variant="'instagram icon'" v-bind:icon="'fa fa-instagram'" />
+            <BrandButton v-bind:size="'lg'" v-bind:variant="'pinterest icon'" v-bind:icon="'fa fa-pinterest'" />
+            <BrandButton v-bind:size="'lg'" v-bind:variant="'vk icon'" v-bind:icon="'fa fa-vk'" />
+            <BrandButton v-bind:size="'lg'" v-bind:variant="'yahoo icon'" v-bind:icon="'fa fa-yahoo'" />
+            <BrandButton v-bind:size="'lg'" v-bind:variant="'behance icon'" v-bind:icon="'fa fa-behance'" />
+            <BrandButton v-bind:size="'lg'" v-bind:variant="'dropbox icon'" v-bind:icon="'fa fa-dropbox'" />
+            <BrandButton v-bind:size="'lg'" v-bind:variant="'reddit icon'" v-bind:icon="'fa fa-reddit'" />
+            <BrandButton v-bind:size="'lg'" v-bind:variant="'spotify icon'" v-bind:icon="'fa fa-spotify'" />
+            <BrandButton v-bind:size="'lg'" v-bind:variant="'vine icon'" v-bind:icon="'fa fa-vine'" />
+            <BrandButton v-bind:size="'lg'" v-bind:variant="'foursquare icon'" v-bind:icon="'fa fa-foursquare'" />
+            <BrandButton v-bind:size="'lg'" v-bind:variant="'vimeo icon'" v-bind:icon="'fa fa-vimeo'" />
           </p>
         </b-card>
       </b-col><!--/.col-->
@@ -197,87 +197,88 @@
           <hr/>
           <h6>Size Small <small>Add <code>size="sm"</code></small></h6>
           <p>
-            <b-button size="sm" variant="facebook text" class="mr-1 btn-brand"><span>Facebook</span></b-button>
-            <b-button size="sm" variant="twitter text" class="mr-1 btn-brand"><span>Twitter</span></b-button>
-            <b-button size="sm" variant="linkedin text" class="mr-1 btn-brand"><span>LinkedIn</span></b-button>
-            <b-button size="sm" variant="flickr text" class="mr-1 btn-brand"><span>Flickr</span></b-button>
-            <b-button size="sm" variant="tumblr text" class="mr-1 btn-brand"><span>Tumblr</span></b-button>
-            <b-button size="sm" variant="xing text" class="mr-1 btn-brand"><span>Xing</span></b-button>
-            <b-button size="sm" variant="github text" class="mr-1 btn-brand"><span>Github</span></b-button>
-            <b-button size="sm" variant="html5 text" class="mr-1 btn-brand"><span>HTML5</span></b-button>
-            <b-button size="sm" variant="openid text" class="mr-1 btn-brand"><span>OpenID</span></b-button>
-            <b-button size="sm" variant="stack-overflow text" class="mr-1 btn-brand"><span>StackOverflow</span></b-button>
-            <b-button size="sm" variant="css3 text" class="mr-1 btn-brand"><span>CSS3</span></b-button>
-            <b-button size="sm" variant="youtube text" class="mr-1 btn-brand"><span>YouTube</span></b-button>
-            <b-button size="sm" variant="dribbble text" class="mr-1 btn-brand"><span>Dribbble</span></b-button>
-            <b-button size="sm" variant="google-plus text" class="mr-1 btn-brand"><span>Google+</span></b-button>
-            <b-button size="sm" variant="instagram text" class="mr-1 btn-brand"><span>Instagram</span></b-button>
-            <b-button size="sm" variant="pinterest text" class="mr-1 btn-brand"><span>Pinterest</span></b-button>
-            <b-button size="sm" variant="vk text" class="mr-1 btn-brand"><span>VK</span></b-button>
-            <b-button size="sm" variant="yahoo text" class="mr-1 btn-brand"><span>Yahoo</span></b-button>
-            <b-button size="sm" variant="behance text" class="mr-1 btn-brand"><span>Behance</span></b-button>
-            <b-button size="sm" variant="dropbox text" class="mr-1 btn-brand"><span>Dropbox</span></b-button>
-            <b-button size="sm" variant="reddit text" class="mr-1 btn-brand"><span>Reddit</span></b-button>
-            <b-button size="sm" variant="spotify text" class="mr-1 btn-brand"><span>Spotify</span></b-button>
-            <b-button size="sm" variant="vine text" class="mr-1 btn-brand"><span>Vine</span></b-button>
-            <b-button size="sm" variant="foursquare text" class="mr-1 btn-brand"><span>Forsquare</span></b-button>
-            <b-button size="sm" variant="vimeo text" class="mr-1 btn-brand"><span>Vimeo</span></b-button>
+            <BrandButton v-bind:size="'sm'" v-bind:variant="'facebook text'" v-bind:title="'Facebook'" />
+            <BrandButton v-bind:size="'sm'" v-bind:variant="'twitter text'" v-bind:title="'Twitter'" />
+            <BrandButton v-bind:size="'sm'" v-bind:variant="'linkedin text'" v-bind:title="'LinkedIn'" />
+            <BrandButton v-bind:size="'sm'" v-bind:variant="'flickr text'" v-bind:title="'Flickr'" />
+            <BrandButton v-bind:size="'sm'" v-bind:variant="'tumblr text'" v-bind:title="'Tumblr'" />
+            <BrandButton v-bind:size="'sm'" v-bind:variant="'xing text'" v-bind:title="'Xing'" />
+            <BrandButton v-bind:size="'sm'" v-bind:variant="'github text'" v-bind:title="'Github'" />
+            <BrandButton v-bind:size="'sm'" v-bind:variant="'html5 text'"  v-bind:title="'HTML5'" />
+            <BrandButton v-bind:size="'sm'" v-bind:variant="'openid text'" v-bind:title="'OpenID'" />
+            <BrandButton v-bind:size="'sm'" v-bind:variant="'stack-overflow text'" v-bind:title="'StackOverflow'" />
+            <BrandButton v-bind:size="'sm'" v-bind:variant="'css3 text'" v-bind:title="'CSS3'" />
+            <BrandButton v-bind:size="'sm'" v-bind:variant="'youtube text'" v-bind:title="'YouTube'" />
+            <BrandButton v-bind:size="'sm'" v-bind:variant="'dribbble text'" v-bind:title="'Dribbble'" />
+            <BrandButton v-bind:size="'sm'" v-bind:variant="'google-plus text'" v-bind:title="'Google+'" />
+            <BrandButton v-bind:size="'sm'" v-bind:variant="'instagram text'" v-bind:title="'Instagram'" />
+            <BrandButton v-bind:size="'sm'" v-bind:variant="'pinterest text'" v-bind:title="'Pinterest'" />
+            <BrandButton v-bind:size="'sm'" v-bind:variant="'vk text'" v-bind:title="'VK'" />
+            <BrandButton v-bind:size="'sm'" v-bind:variant="'yahoo text'" v-bind:title="'Yahoo'" />
+            <BrandButton v-bind:size="'sm'" v-bind:variant="'behance text'" v-bind:title="'Behance'" />
+            <BrandButton v-bind:size="'sm'" v-bind:variant="'dropbox text'" v-bind:title="'Dropbox'" />
+            <BrandButton v-bind:size="'sm'" v-bind:variant="'reddit text'" v-bind:title="'Reddit'" />
+            <BrandButton v-bind:size="'sm'" v-bind:variant="'spotify text'" v-bind:title="'Spotify'" />
+            <BrandButton v-bind:size="'sm'" v-bind:variant="'vine text'" v-bind:title="'Vine'" />
+            <BrandButton v-bind:size="'sm'" v-bind:variant="'foursquare text'" v-bind:title="'Forsquare'" />
+            <BrandButton v-bind:size="'sm'" v-bind:variant="'vimeo text'" v-bind:title="'Vimeo'" />
           </p>
           <h6>Size Normal</h6>
           <p>
-            <b-button variant="facebook text" class="mr-1 btn-brand"><span>Facebook</span></b-button>
-            <b-button variant="twitter text" class="mr-1 btn-brand"><span>Twitter</span></b-button>
-            <b-button variant="linkedin text" class="mr-1 btn-brand"><span>LinkedIn</span></b-button>
-            <b-button variant="flickr text" class="mr-1 btn-brand"><span>Flickr</span></b-button>
-            <b-button variant="tumblr text" class="mr-1 btn-brand"><span>Tumblr</span></b-button>
-            <b-button variant="xing text" class="mr-1 btn-brand"><span>Xing</span></b-button>
-            <b-button variant="github text" class="mr-1 btn-brand"><span>Github</span></b-button>
-            <b-button variant="html5 text" class="mr-1 btn-brand"><span>HTML5</span></b-button>
-            <b-button variant="openid text" class="mr-1 btn-brand"><span>OpenID</span></b-button>
-            <b-button variant="stack-overflow text" class="mr-1 btn-brand"><span>StackOverflow</span></b-button>
-            <b-button variant="css3 text" class="mr-1 btn-brand"><span>CSS3</span></b-button>
-            <b-button variant="youtube text" class="mr-1 btn-brand"><span>YouTube</span></b-button>
-            <b-button variant="dribbble text" class="mr-1 btn-brand"><span>Dribbble</span></b-button>
-            <b-button variant="google-plus text" class="mr-1 btn-brand"><span>Google+</span></b-button>
-            <b-button variant="instagram text" class="mr-1 btn-brand"><span>Instagram</span></b-button>
-            <b-button variant="pinterest text" class="mr-1 btn-brand"><span>Pinterest</span></b-button>
-            <b-button variant="vk text" class="mr-1 btn-brand"><span>VK</span></b-button>
-            <b-button variant="yahoo text" class="mr-1 btn-brand"><span>Yahoo</span></b-button>
-            <b-button variant="behance text" class="mr-1 btn-brand"><span>Behance</span></b-button>
-            <b-button variant="dropbox text" class="mr-1 btn-brand"><span>Dropbox</span></b-button>
-            <b-button variant="reddit text" class="mr-1 btn-brand"><span>Reddit</span></b-button>
-            <b-button variant="spotify text" class="mr-1 btn-brand"><span>Spotify</span></b-button>
-            <b-button variant="vine text" class="mr-1 btn-brand"><span>Vine</span></b-button>
-            <b-button variant="foursquare text" class="mr-1 btn-brand"><span>Forsquare</span></b-button>
-            <b-button variant="vimeo text" class="mr-1 btn-brand"><span>Vimeo</span></b-button>
+            <BrandButton v-bind:variant="'facebook text'" v-bind:title="'Facebook'" />
+            <BrandButton v-bind:variant="'twitter text'" v-bind:title="'Twitter'" />
+            <BrandButton v-bind:variant="'linkedin text'" v-bind:title="'LinkedIn'" />
+            <BrandButton v-bind:variant="'flickr text'" v-bind:title="'Flickr'" />
+            <BrandButton v-bind:variant="'tumblr text'" v-bind:title="'Tumblr'" />
+            <BrandButton v-bind:variant="'xing text'" v-bind:title="'Xing'" />
+            <BrandButton v-bind:variant="'github text'" v-bind:title="'Github'" />
+            <BrandButton v-bind:variant="'html5 text'"  v-bind:title="'HTML5'" />
+            <BrandButton v-bind:variant="'openid text'" v-bind:title="'OpenID'" />
+            <BrandButton v-bind:variant="'stack-overflow text'" v-bind:title="'StackOverflow'" />
+            <BrandButton v-bind:variant="'css3 text'" v-bind:title="'CSS3'" />
+            <BrandButton v-bind:variant="'youtube text'" v-bind:title="'YouTube'" />
+            <BrandButton v-bind:variant="'dribbble text'" v-bind:title="'Dribbble'" />
+            <BrandButton v-bind:variant="'google-plus text'" v-bind:title="'Google+'" />
+            <BrandButton v-bind:variant="'instagram text'" v-bind:title="'Instagram'" />
+            <BrandButton v-bind:variant="'pinterest text'" v-bind:title="'Pinterest'" />
+            <BrandButton v-bind:variant="'vk text'" v-bind:title="'VK'" />
+            <BrandButton v-bind:variant="'yahoo text'" v-bind:title="'Yahoo'" />
+            <BrandButton v-bind:variant="'behance text'" v-bind:title="'Behance'" />
+            <BrandButton v-bind:variant="'dropbox text'" v-bind:title="'Dropbox'" />
+            <BrandButton v-bind:variant="'reddit text'" v-bind:title="'Reddit'" />
+            <BrandButton v-bind:variant="'spotify text'" v-bind:title="'Spotify'" />
+            <BrandButton v-bind:variant="'vine text'" v-bind:title="'Vine'" />
+            <BrandButton v-bind:variant="'foursquare text'" v-bind:title="'Forsquare'" />
+            <BrandButton v-bind:variant="'vimeo text'" v-bind:title="'Vimeo'" />
           </p>
           <h6>Size Large <small>Add <code>size="lg"</code></small></h6>
           <p>
-            <b-button size="lg" variant="facebook text" class="mr-1 btn-brand"><span>Facebook</span></b-button>
-            <b-button size="lg" variant="twitter text" class="mr-1 btn-brand"><span>Twitter</span></b-button>
-            <b-button size="lg" variant="linkedin text" class="mr-1 btn-brand"><span>LinkedIn</span></b-button>
-            <b-button size="lg" variant="flickr text" class="mr-1 btn-brand"><span>Flickr</span></b-button>
-            <b-button size="lg" variant="tumblr text" class="mr-1 btn-brand"><span>Tumblr</span></b-button>
-            <b-button size="lg" variant="xing text" class="mr-1 btn-brand"><span>Xing</span></b-button>
-            <b-button size="lg" variant="github text" class="mr-1 btn-brand"><span>Github</span></b-button>
-            <b-button size="lg" variant="html5 text" class="mr-1 btn-brand"><span>HTML5</span></b-button>
-            <b-button size="lg" variant="openid text" class="mr-1 btn-brand"><span>OpenID</span></b-button>
-            <b-button size="lg" variant="stack-overflow text" class="mr-1 btn-brand"><span>StackOverflow</span></b-button>
-            <b-button size="lg" variant="css3 text" class="mr-1 btn-brand"><span>CSS3</span></b-button>
-            <b-button size="lg" variant="youtube text" class="mr-1 btn-brand"><span>YouTube</span></b-button>
-            <b-button size="lg" variant="dribbble text" class="mr-1 btn-brand"><span>Dribbble</span></b-button>
-            <b-button size="lg" variant="google-plus text" class="mr-1 btn-brand"><span>Google+</span></b-button>
-            <b-button size="lg" variant="instagram text" class="mr-1 btn-brand"><span>Instagram</span></b-button>
-            <b-button size="lg" variant="pinterest text" class="mr-1 btn-brand"><span>Pinterest</span></b-button>
-            <b-button size="lg" variant="vk text" class="mr-1 btn-brand"><span>VK</span></b-button>
-            <b-button size="lg" variant="yahoo text" class="mr-1 btn-brand"><span>Yahoo</span></b-button>
-            <b-button size="lg" variant="behance text" class="mr-1 btn-brand"><span>Behance</span></b-button>
-            <b-button size="lg" variant="dropbox text" class="mr-1 btn-brand"><span>Dropbox</span></b-button>
-            <b-button size="lg" variant="reddit text" class="mr-1 btn-brand"><span>Reddit</span></b-button>
-            <b-button size="lg" variant="spotify text" class="mr-1 btn-brand"><span>Spotify</span></b-button>
-            <b-button size="lg" variant="vine text" class="mr-1 btn-brand"><span>Vine</span></b-button>
-            <b-button size="lg" variant="foursquare text" class="mr-1 btn-brand"><span>Forsquare</span></b-button>
-            <b-button size="lg" variant="vimeo text" class="mr-1 btn-brand"><span>Vimeo</span></b-button>
+            <BrandButton v-bind:size="'lg'" v-bind:variant="'facebook text'" v-bind:title="'Facebook'" />
+            <BrandButton v-bind:size="'lg'" v-bind:variant="'twitter text'" v-bind:title="'Twitter'" />
+            <BrandButton v-bind:size="'lg'" v-bind:variant="'linkedin text'" v-bind:title="'LinkedIn'" />
+            <BrandButton v-bind:size="'lg'" v-bind:variant="'flickr text'" v-bind:title="'Flickr'" />
+            <BrandButton v-bind:size="'lg'" v-bind:variant="'tumblr text'" v-bind:title="'Tumblr'" />
+            <BrandButton v-bind:size="'lg'" v-bind:variant="'xing text'" v-bind:title="'Xing'" />
+            <BrandButton v-bind:size="'lg'" v-bind:variant="'github text'" v-bind:title="'Github'" />
+            <BrandButton v-bind:size="'lg'" v-bind:variant="'html5 text'"  v-bind:title="'HTML5'" />
+            <BrandButton v-bind:size="'lg'" v-bind:variant="'openid text'" v-bind:title="'OpenID'" />
+            <BrandButton v-bind:size="'lg'" v-bind:variant="'stack-overflow text'" v-bind:title="'StackOverflow'" />
+            <BrandButton v-bind:size="'lg'" v-bind:variant="'css3 text'" v-bind:title="'CSS3'" />
+            <BrandButton v-bind:size="'lg'" v-bind:variant="'youtube text'" v-bind:title="'YouTube'" />
+            <BrandButton v-bind:size="'lg'" v-bind:variant="'dribbble text'" v-bind:title="'Dribbble'" />
+            <BrandButton v-bind:size="'lg'" v-bind:variant="'google-plus text'" v-bind:title="'Google+'" />
+            <BrandButton v-bind:size="'lg'" v-bind:variant="'instagram text'" v-bind:title="'Instagram'" />
+            <BrandButton v-bind:size="'lg'" v-bind:variant="'pinterest text'" v-bind:title="'Pinterest'" />
+            <BrandButton v-bind:size="'lg'" v-bind:variant="'vk text'" v-bind:title="'VK'" />
+            <BrandButton v-bind:size="'lg'" v-bind:variant="'yahoo text'" v-bind:title="'Yahoo'" />
+            <BrandButton v-bind:size="'lg'" v-bind:variant="'behance text'" v-bind:title="'Behance'" />
+            <BrandButton v-bind:size="'lg'" v-bind:variant="'dropbox text'" v-bind:title="'Dropbox'" />
+            <BrandButton v-bind:size="'lg'" v-bind:variant="'reddit text'" v-bind:title="'Reddit'" />
+            <BrandButton v-bind:size="'lg'" v-bind:variant="'spotify text'" v-bind:title="'Spotify'" />
+            <BrandButton v-bind:size="'lg'" v-bind:variant="'vine text'" v-bind:title="'Vine'" />
+            <BrandButton v-bind:size="'lg'" v-bind:variant="'foursquare text'" v-bind:title="'Forsquare'" />
+            <BrandButton v-bind:size="'lg'" v-bind:variant="'vimeo text'" v-bind:title="'Vimeo'" />
+
           </p>
         </b-card>
       </b-col><!--/.col-->
@@ -286,8 +287,12 @@
 </template>
 
 <script>
+import BrandButton from '../../components/BrandButton'
 export default {
-  name: 'brand-buttons'
+  name: 'brand-buttons',
+  components: {
+    BrandButton,
+  }
 }
 </script>
 
