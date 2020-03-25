@@ -19,12 +19,15 @@
             </div>
           </b-col>
           <b-col cols="6">
-            <div class="text-center my-3">
-              <b-btn id="tooltipButton-2" variant="primary">Button</b-btn>
-              <b-tooltip show target="tooltipButton-2">
-                I start open
-              </b-tooltip>
-            </div>
+            <Tooltip
+              v-bind:containerClasses="'text-center my-3'"
+              v-bind:buttonId="'tooltipButton-2'"
+              v-bind:buttonVariant="'primary'"
+              v-bind:buttonText="'Button'"
+              v-bind:content="'I start open'"
+              v-bind:target="'tooltipButton-2'"
+              v-bind:placement="'top'"
+            />
           </b-col>
         </b-row>
       </b-card>
@@ -117,8 +120,13 @@
 </template>
 
 <script>
+import Tooltip from '../../components/Tooltip'
+
 export default {
   name: 'tooltips',
+  components:{
+    Tooltip
+  },
   data () {
     return {
       show: true,
