@@ -5,6 +5,9 @@ import Router from 'vue-router'
 const DefaultContainer = () => import('@/containers/DefaultContainer')
 
 // Views
+const HomeDashboard = () => import('@/views/HomeDashboard')
+
+// Demos Views
 const Dashboard = () => import('@/views/Dashboard')
 
 const Colors = () => import('@/views/theme/Colors')
@@ -64,7 +67,7 @@ function configRoutes() {
   return [
     {
       path: '/',
-      redirect: '/dashboard',
+      redirect: '/homedashboard',
       name: 'Home',
       component: DefaultContainer,
       children: [
@@ -72,6 +75,11 @@ function configRoutes() {
           path: 'dashboard',
           name: 'Dashboard',
           component: Dashboard
+        },
+        {
+          path: 'homedashboard',
+          name: 'HomeDashboard',
+          component: HomeDashboard
         },
         {
           path: 'theme',
