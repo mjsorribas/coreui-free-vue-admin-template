@@ -1,9 +1,9 @@
 <template>
-    <b-jumbotron :header=headerData :class=classes :lead=leadData >
-        <p>{{content}}</p>
-        <b-button :v-if="withButton" :size=buttonSize :class=buttonClasses :variant=buttonVariant />
-    </b-jumbotron>
-  </b-button>
+  <b-jumbotron :header=headerData :class=classes :lead=leadData >
+    <p>{{content}}</p>
+    <b-button :v-if="withButton" :size=buttonSize :class=buttonClasses :variant=buttonVariant >
+    </b-button>
+  </b-jumbotron>
 </template>
 <script>
 export default {
