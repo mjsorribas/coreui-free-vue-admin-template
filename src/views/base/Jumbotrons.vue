@@ -20,10 +20,13 @@
                   v-bind:classes="'Bootstrap 4 Components for Vue.js 2'"
                   v-bind:leadData="'Title Card'"
                   v-bind:content="'For more information visit website.'"
-                  v-bind:withButton=false
+                  v-bind:withButton="true"
                   v-bind:buttonSize="sm"
                   v-bind:buttonClasses="btn"
-                  v-bind:buttonVariant="primary" 
+                  v-bind:buttonVariant="primary"
+                  v-bind:buttonText="'More Info'"
+                  v-bind:buttonLink="'#'"
+                  
                 />
               <!--<b-jumbotron header="Bootstrap 4" lead="Bootstrap 4 Components for Vue.js 2">
                 <p>For more information visit website</p>

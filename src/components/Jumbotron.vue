@@ -1,7 +1,8 @@
 <template>
   <b-jumbotron :header=headerData :class=classes :lead=leadData >
     <p>{{content}}</p>
-    <b-button :v-if="withButton" :size=buttonSize :class=buttonClasses :variant=buttonVariant >
+    <b-button :v-if="withButton" :size=buttonSize :class=buttonClasses :variant=buttonVariant :href=buttonLink >
+      {{buttonText}}
     </b-button>
   </b-jumbotron>
 </template>
@@ -42,13 +43,23 @@ export default {
     buttonClasses:{
       type: String,
       required: false,
-      default:'btn'
+      default:'mr-1 btn-primary'
     },
     buttonVariant:{
       type: String,
       required: false,
       default:'primary'
-    },        
+    }, 
+    buttonText:{ 
+      type: String,
+      required: false,
+      default:''
+    },  
+    buttonLink:{ 
+      type: String,
+      required: false,
+      default:''
+    },     
   },
   data: function () {
     return {
