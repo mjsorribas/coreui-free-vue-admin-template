@@ -14,19 +14,16 @@
         </div>
         <div>
           <h6>Default</h6>
-          <b-pagination size="md" :total-rows="100" v-model="currentPage" :per-page="10">
-          </b-pagination>
+          <Pagination size="md" total="100" model="currentPage" perPage="10" />
           <br>
 
           <h6>Small</h6>
-          <b-pagination size="sm" :total-rows="100" v-model="currentPage" :per-page="10">
-          </b-pagination>
+          <Pagination size="sm" total="100" model="currentPage" perPage="10" />
           <br>
 
           <div class="d-sm-down-none">
             <h6>Large</h6>
-            <b-pagination size="lg" :total-rows="100" v-model="currentPage" :per-page="10">
-            </b-pagination>
+            <Pagination size="lg" total="100" model="currentPage" perPage="10" />
             <br>
           </div>
 
@@ -42,18 +39,15 @@
         </div>
         <div>
           <h6>Left alignment (default)</h6>
-          <b-pagination :total-rows="100" v-model="currentPage" :per-page="10">
-          </b-pagination>
+            <Pagination  total="100" model="currentPage" perPage="10" />
           <br>
 
           <h6>Center alignment</h6>
-          <b-pagination align="center" :total-rows="100" v-model="currentPage" :per-page="10">
-          </b-pagination>
+          <Pagination  align="center" total="100" model="currentPage" perPage="10" />
           <br>
 
           <h6>Right (end) alignment</h6>
-          <b-pagination align="right" :total-rows="100" v-model="currentPage" :per-page="10">
-          </b-pagination>
+          <Pagination  align="right" total="100" model="currentPage" perPage="10" />
           <br>
 
           <div>currentPage: {{currentPage}}</div>
@@ -82,8 +76,13 @@
 </template>
 
 <script>
+import Pagination from '../../components/Pagination'
+
 export default {
   name: 'paginations',
+  components: {
+    Pagination
+  },  
   data () {
     return {
       currentPage: 3
