@@ -62,12 +62,10 @@
         </div>
         <div>
           <h6>Default</h6>
-          <b-pagination-nav base-url="#" :number-of-pages="10" v-model="currentPage"/>
-
+          <PaginationNav  base-url="#" numberOfPages="10" currentPage="currentPage" />
           <h6 class="mt-4">With link generator function</h6>
-          <b-pagination-nav :link-gen="linkGen" :number-of-pages="10" v-model="currentPage"/>
+          <PaginationNav linkGen="linkGen" numberOfPages="10" currentPage="currentPage" />
           <br>
-
           <div class="mt-4">currentPage: {{currentPage}}</div>
         </div>
       </b-card>
@@ -77,11 +75,14 @@
 
 <script>
 import Pagination from '../../components/Pagination'
+import PaginationNav from '../../components/PaginationNav'
+
 
 export default {
   name: 'paginations',
   components: {
-    Pagination
+    Pagination,
+    PaginationNav
   },  
   data () {
     return {
