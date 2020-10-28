@@ -16,7 +16,7 @@
             </div>
             <div>
               <Jumbotron
-                  v-bind:headerData="'Bootstrap 41'"
+                  v-bind:headerData="'Bootstrap 4'"
                   v-bind:classes="'Bootstrap 4 Components for Vue.js 2'"
                   v-bind:leadData="'Title Card'"
                   v-bind:content="'For more information visit website.'"
@@ -28,10 +28,6 @@
                   v-bind:buttonLink="'#'"
                   
                 />
-              <!--<b-jumbotron header="Bootstrap 4" lead="Bootstrap 4 Components for Vue.js 2">
-                <p>For more information visit website</p>
-                <b-btn variant="primary" href="#">More Info</b-btn>
-              </b-jumbotron>-->
             </div>
           </b-card>
         </b-col>
